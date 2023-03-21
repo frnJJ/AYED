@@ -7,11 +7,6 @@ public class aplicacion {
 		uno c =new uno();
 		c.getnumbers3(-6,10);
 		
-		Scanner consola = new Scanner(System.in);
-		System.out.println("ingrese el valor N");
-		int n = consola.nextInt();
-		for (int num: uno.puntodos(n)) {
-			System.out.println(num+" ");
 		}
 	}
 		
