@@ -1,0 +1,10 @@
+package ejer1;
+
+public class aplicacion {
+	public static void main(String[] args) {
+		uno c =new uno();
+		c.getnumbers2(-6,10);
+		
+	}
+
+}

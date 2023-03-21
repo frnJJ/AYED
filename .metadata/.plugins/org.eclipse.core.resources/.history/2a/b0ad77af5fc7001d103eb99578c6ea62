@@ -1,0 +1,6 @@
+package ejer1;
+
+public class arr {
+	int [] ar;
+
+}

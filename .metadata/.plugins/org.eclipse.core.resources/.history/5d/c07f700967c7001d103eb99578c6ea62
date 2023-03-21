@@ -1,0 +1,8 @@
+
+public class clase {
+	public void getnumbrer (int a; int b) {
+		for (int i = a;a <= b; a++) {
+			System.out.println(i);
+		}
+	}
+}
