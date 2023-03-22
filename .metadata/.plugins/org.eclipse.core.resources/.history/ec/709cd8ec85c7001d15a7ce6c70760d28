@@ -1,0 +1,11 @@
+package p1;
+
+import java.util.Scanner; 
+
+public class aplicacion {
+	public static void main(String[] args) {
+		uno.getnumbers3(-6,10);
+		
+		}
+	}
+		
