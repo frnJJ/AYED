@@ -1,6 +1,7 @@
 package P5;
 
 public class Proc {
+	static int vec2 [] =  new int [3];
 	
 	public static int[] getA(int [] a) {
 		int min = 99999;
