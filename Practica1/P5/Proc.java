@@ -45,5 +45,28 @@ public class Proc {
 		P.agregar(2, max);
 		
 	}
+	public static void getC (int [] vec) {
+		int min = 99999;
+		int max = -9999;
+		int prom = 0;
+		for (int i: vec) {
+			if (i < min) {
+				min = i;
+			}
+			if (i > max) {
+				max = i;
+			}
+			prom += i;
+		
+		}
+		prom = prom / vec.length;
+		
+		vec2[0] = prom;
+		vec2[1] = min;
+		vec2[2] = max;
+		
+		
+	}
+
 
 }
