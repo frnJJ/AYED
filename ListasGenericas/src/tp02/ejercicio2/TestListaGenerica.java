@@ -26,17 +26,27 @@ public class TestListaGenerica {
 	Estudiante aux;
 	
 
-	v[0].setApellido("Garcia");
-	list.agregar(v);
+	ColaGenerica cola = new ColaGenerica();
+	PilaGenerica pila = new PilaGenerica();
+
 	
-	while (! list.fin()) {
-		
-		aux = (Estudiante) (list.proximo());
-		System.out.println(aux.tusDatos());
-		
-	}
+	//System.out.println(pila.esVacia());
+	
+	pila.Apilar(10);
+	pila.Apilar(999);
+	pila.Apilar(40);
+	
+	//System.out.println(pila.tope());
+	
+	//System.out.println(pila.desApilar());
+	//System.out.println(pila.desApilar());
+	//System.out.println(pila.tope());
+	
+	TestBalance t =  new TestBalance();
 	
 	
+
+	System.out.println(t.verificar("(([]))"));
 	
 	}
 	
