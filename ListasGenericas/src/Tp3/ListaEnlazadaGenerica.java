@@ -1,4 +1,8 @@
-package tp02.ejercicio2;
+package Tp3;
+
+import tp02.ejercicio2.ListaGenerica;
+import tp02.ejercicio2.NodoGenerico;
+
 /**
  * La clase ListaGenericaEnlazada es una ListaGenerica, donde los elementos de
  * la lista (nodos) referencian al siguiente elemento (nodo), por este motivo,
