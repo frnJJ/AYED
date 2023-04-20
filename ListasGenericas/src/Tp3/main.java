@@ -13,13 +13,13 @@ public class main {
 	}
 
 	public static void main(String[] args) {
-		ArbolBinario aux = new ArbolBinario(10);
-		ArbolBinario aux1 = new ArbolBinario(1);
-		ArbolBinario aux2 = new ArbolBinario(2);
-		ArbolBinario aux3 = new ArbolBinario(3);
-		ArbolBinario aux4 = new ArbolBinario(4);
-		ArbolBinario aux5 = new ArbolBinario(5);
-		ArbolBinario aux6 = new ArbolBinario(6);
+		ArbolBinario<Integer> aux = new ArbolBinario<Integer>(10);
+		ArbolBinario<Integer> aux1 = new ArbolBinario<Integer>(1);
+		ArbolBinario<Integer> aux2 = new ArbolBinario<Integer>(6);
+		ArbolBinario<Integer> aux3 = new ArbolBinario<Integer>(3);
+		ArbolBinario<Integer> aux4 = new ArbolBinario<Integer>(4);
+		ArbolBinario<Integer> aux5 = new ArbolBinario<Integer>(5);
+		ArbolBinario<Integer> aux6 = new ArbolBinario<Integer>(6);
 		
 		aux.agregarHijoDerecho(aux1);
 		aux.agregarHijoIzquierdo(aux2);
@@ -40,9 +40,9 @@ public class main {
 			
 		//}
 		
-		ProfundidadDeArbolBinario pr = new ProfundidadDeArbolBinario();
+		RedBinariaLlena pr = new RedBinariaLlena();
 		
-		System.out.println(pr.sumaNodos(0));
+		System.out.println(pr.RetardoEnvio(aux));
 		
 		
 
