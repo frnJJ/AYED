@@ -7,6 +7,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\Usuario\eclipse-workspace\ListasDeEnteros"/>
+			<item value="C:\Users\Usuario\eclipse-workspace\ListasGenericas"/>
 			<item value="C:\Users\Usuario\Desktop\Practica1"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
@@ -25,6 +27,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Usuario\eclipse-workspace\ListasGenericas"/>
 			<item value="C:\Users\Usuario\eclipse-workspace"/>
 		</list>
 	</section>

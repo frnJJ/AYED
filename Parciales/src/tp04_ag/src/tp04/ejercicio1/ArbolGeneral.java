@@ -1,7 +1,4 @@
-package tp04.ejercicio1;
-
-import tp02.ejercicio2.ListaEnlazadaGenerica;
-import tp02.ejercicio2.ListaGenerica;
+package tp04_ag.src.tp04.ejercicio1;
 
 public class ArbolGeneral<T> {
 

@@ -1,11 +1,12 @@
 package tp04_ag.src.tp02.ejercicio2;
 
+import Tp3.ArbolBinario;
 
 public class main {
 
 	public static void main(String[] args) {
 		
-		AreaEmpresa e1 = new AreaEmpresa(14,"a");
+	/*	AreaEmpresa e1 = new AreaEmpresa(14,"a");
 		AreaEmpresa e2 = new AreaEmpresa(13,"a");
 		AreaEmpresa e3 = new AreaEmpresa(25,"a");
 		AreaEmpresa e4 = new AreaEmpresa(10,"a");
@@ -18,36 +19,48 @@ public class main {
 		AreaEmpresa e11 = new AreaEmpresa(9,"a");
 		AreaEmpresa e12 = new AreaEmpresa(12,"a");
 		AreaEmpresa e13 = new AreaEmpresa(19,"a");
+	*/	
+		ArbolBinario<Integer> aux = new ArbolBinario<Integer>(10);
+		ArbolBinario<Integer> aux1 = new ArbolBinario<Integer>(1);
+		ArbolBinario<Integer> aux2 = new ArbolBinario<Integer>(2);
+		ArbolBinario<Integer> aux3 = new ArbolBinario<Integer>(3);
+		ArbolBinario<Integer> aux4 = new ArbolBinario<Integer>(4);
+		ArbolBinario<Integer> aux5 = new ArbolBinario<Integer>(5);
+		ArbolBinario<Integer> aux6 = new ArbolBinario<Integer>(6);
+		
+		aux.agregarHijoDerecho(aux1);
+		aux.agregarHijoIzquierdo(aux2);
+		aux2.agregarHijoDerecho(aux3);
+		aux2.agregarHijoIzquierdo(aux4);
+		aux1.agregarHijoDerecho(aux5);
+		aux1.agregarHijoIzquierdo(aux6);
 		
 		
 		
+		/*ArbolGeneral<Integer> M = new ArbolGeneral<Integer>(14);
+		ArbolGeneral<Integer> J = new ArbolGeneral<Integer>(13);
+		ArbolGeneral<Integer> K= new ArbolGeneral<Integer>(25);
+		ArbolGeneral<Integer> L = new ArbolGeneral<Integer>(10);
+		ArbolGeneral<Integer> A = new ArbolGeneral<Integer>(4);
+		ArbolGeneral<Integer> B = new ArbolGeneral<Integer>(7);
+		ArbolGeneral<Integer> C = new ArbolGeneral<Integer>(5);
+		ArbolGeneral<Integer> D = new ArbolGeneral<Integer>(6);
+		ArbolGeneral<Integer> E = new ArbolGeneral<Integer>(11);
+		ArbolGeneral<Integer> F = new ArbolGeneral<Integer>(18);
+		ArbolGeneral<Integer> G = new ArbolGeneral<Integer>(9);
+		ArbolGeneral<Integer> H = new ArbolGeneral<Integer>(12);
+		ArbolGeneral<Integer> I = new ArbolGeneral<Integer>(19);
+	
 		
 		
-		ArbolGeneral<AreaEmpresa> M = new ArbolGeneral<AreaEmpresa>(e1);
-		ArbolGeneral<AreaEmpresa> J = new ArbolGeneral<AreaEmpresa>(e2);
-		ArbolGeneral<AreaEmpresa> K= new ArbolGeneral<AreaEmpresa>(e3);
-		ArbolGeneral<AreaEmpresa> L = new ArbolGeneral<AreaEmpresa>(e4);
-		ArbolGeneral<AreaEmpresa> A = new ArbolGeneral<AreaEmpresa>(e5);
-		ArbolGeneral<AreaEmpresa> B = new ArbolGeneral<AreaEmpresa>(e6);
-		ArbolGeneral<AreaEmpresa> C = new ArbolGeneral<AreaEmpresa>(e7);
-		ArbolGeneral<AreaEmpresa> D = new ArbolGeneral<AreaEmpresa>(e8);
-		ArbolGeneral<AreaEmpresa> E = new ArbolGeneral<AreaEmpresa>(e9);
-		ArbolGeneral<AreaEmpresa> F = new ArbolGeneral<AreaEmpresa>(e10);
-		ArbolGeneral<AreaEmpresa> G = new ArbolGeneral<AreaEmpresa>(e11);
-		ArbolGeneral<AreaEmpresa> H = new ArbolGeneral<AreaEmpresa>(e12);
-		ArbolGeneral<AreaEmpresa> I = new ArbolGeneral<AreaEmpresa>(e13);
-		
-		
-		
-		ListaGenerica<ArbolGeneral<AreaEmpresa>> h= new ListaEnlazadaGenerica<ArbolGeneral<AreaEmpresa>>();
+		ListaGenerica<ArbolGeneral<Integer>> h= new ListaEnlazadaGenerica<ArbolGeneral<Integer>>();
 		h.agregarFinal(J);
 		h.agregarFinal(K);
 		h.agregarFinal(L);
 		
 		
-		M.setHijos(h);
 		
-		ListaGenerica<ArbolGeneral<AreaEmpresa>> h2= new ListaEnlazadaGenerica<ArbolGeneral<AreaEmpresa>>();
+		ListaGenerica<ArbolGeneral<Integer>> h2= new ListaEnlazadaGenerica<ArbolGeneral<Integer>>();
 		
 		h2.agregarFinal(A);
 		h2.agregarFinal(B);
@@ -57,7 +70,7 @@ public class main {
 		J.setHijos(h2);
 		
 		
-		ListaGenerica<ArbolGeneral<AreaEmpresa>> h3= new ListaEnlazadaGenerica<ArbolGeneral<AreaEmpresa>>();
+		ListaGenerica<ArbolGeneral<Integer>> h3= new ListaEnlazadaGenerica<ArbolGeneral<Integer>>();
 		
 		h3.agregarFinal(D);
 		h3.agregarFinal(E);
@@ -65,7 +78,7 @@ public class main {
 		
 		K.setHijos(h3);
 		
-		ListaGenerica<ArbolGeneral<AreaEmpresa>> h4= new ListaEnlazadaGenerica<ArbolGeneral<AreaEmpresa>>();
+		ListaGenerica<ArbolGeneral<Integer>> h4= new ListaEnlazadaGenerica<ArbolGeneral<Integer>>();
 		
 		h4.agregarFinal(G);
 		h4.agregarFinal(H);
@@ -73,7 +86,12 @@ public class main {
 		
 		L.setHijos(h4);
 		
-		System.out.println(M.esAncestro(e1,e7));
+		M.setHijos(h);
+		*/
+		
+		Parcial p = new Parcial();
+		
+		System.out.println(p.isTwoTree(10,aux));
 
 	}
 

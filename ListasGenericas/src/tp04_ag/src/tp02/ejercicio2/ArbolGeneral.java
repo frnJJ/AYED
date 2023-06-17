@@ -238,29 +238,21 @@ public class ArbolGeneral<T> {
 	
 	private int helper3(ArbolGeneral<Integer> a) {
 		int alt= 0;
-		ColaGenerica<ArbolGeneral<Integer>> cola = new ColaGenerica<ArbolGeneral<Integer>>();
-		ArbolGeneral<Integer> aux;
-		cola.Encolar(a);
-		cola.Encolar(null);
-		while (! cola.esVacia()) {
-			aux = cola.Desencolar();
-			if (aux != null) {
-				if (aux.tieneHijos()) {
-					ListaGenerica<ArbolGeneral<Integer>> hijos = aux.getHijos();
-					hijos.comenzar();
-					while (! hijos.fin()) {
-						cola.Encolar(hijos.proximo());
-					}
-				}
-			}
-			else {
-				if (! cola.esVacia()) {
-					alt ++;
-					cola.Encolar(null);
-				}
-			}
+		if (a.esHoja()) {
+			return alt;
 		}
-		return alt;
+		else {
+			if (a.tieneHijos()) {
+				ListaGenerica<ArbolGeneral<Integer>> hijos= a.getHijos();
+				hijos.comenzar();
+				while (! hijos.fin()) {
+					alt = Math.max(alt, helper3(hijos.proximo()));
+					
+				}
+			}
+			return (alt + 1);
+			
+		}
 	}
 		
 	

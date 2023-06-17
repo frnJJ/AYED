@@ -15,7 +15,7 @@ public class main {
 	public static void main(String[] args) {
 		ArbolBinario<Integer> aux = new ArbolBinario<Integer>(10);
 		ArbolBinario<Integer> aux1 = new ArbolBinario<Integer>(1);
-		ArbolBinario<Integer> aux2 = new ArbolBinario<Integer>(6);
+		ArbolBinario<Integer> aux2 = new ArbolBinario<Integer>(2);
 		ArbolBinario<Integer> aux3 = new ArbolBinario<Integer>(3);
 		ArbolBinario<Integer> aux4 = new ArbolBinario<Integer>(4);
 		ArbolBinario<Integer> aux5 = new ArbolBinario<Integer>(5);
@@ -41,8 +41,9 @@ public class main {
 		//}
 		
 		RedBinariaLlena pr = new RedBinariaLlena();
-		
-		System.out.println(pr.RetardoEnvio(aux));
+		pr.SetAb(aux);
+
+		System.out.println(pr.RetardoEnvio());
 		
 		
 

@@ -100,21 +100,6 @@ public class ListaEnlazadaGenerica<T> extends ListaGenerica<T> {
 		return true;
 	}
 
-	@Override
-	public boolean agregarFinal(T elem) {
-		NodoGenerico<T> aux = new NodoGenerico<T>();
-		aux.setDato(elem);
-		if (this.inicio == null) {
-			this.inicio = aux;
-			this.actual = aux;
-			this.fin = aux;
-		} else {
-			fin.setSiguiente(aux);
-			fin = aux;
-		}
-		tamanio++;
-		return true;
-	}
 
 	@Override
 	public boolean eliminar(T elem) {

@@ -2,31 +2,31 @@ package Tp3;
 
 public class RedBinariaLlena {
 	
-	//private ArbolBinario<Integer> ab=  new ArbolBinario<Integer>();
+	private ArbolBinario<Integer> ab=  new ArbolBinario<Integer>();
 	
-	
+	public void SetAb(ArbolBinario<Integer> a) {
+		this.ab = a;
+	}
 	
 	private int helper (ArbolBinario<Integer> ab) {
-		int hd=0;
-		int hi=0;
 		if (ab.esHoja()) {
-			return(ab.getDato());
+			return ab.getDato();
 		}
 		else {
+			System.out.println(ab.getDato());
+			int datoI = ab.getDato();
+			int datoD = ab.getDato();
 			if (ab.tieneHijoIzquierdo()) {
-				hi += (helper(ab.getHijoIzquierdo())+ab.getDato());
-			}
+				datoI += (helper(ab.getHijoIzquierdo()));
 				
-			if (ab.tieneHijoDerecho()) {
-				hd += (helper(ab.getHijoDerecho())+ab.getDato());
 			}
-			
+			if (ab.tieneHijoDerecho()) {
+				datoD += (helper(ab.getHijoDerecho()));
+			}
+			return Math.max(datoI,datoD);
 		}
-		return(Math.max(hi,hd));
-		
-		
 	}
-	public int RetardoEnvio (ArbolBinario<Integer> ab) {
+	public int RetardoEnvio () {
 		int res= 0;
 		res= helper(ab);
 		return(res);
