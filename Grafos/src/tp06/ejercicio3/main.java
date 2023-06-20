@@ -110,7 +110,13 @@ public class main {
 		
 		p.setGrafo(g);
 		
-		System.out.println(p.caminoMasCorto("Ayuntamiento", "Museo Fram"));
+		ListaGenerica<ListaGenerica<String>> list = oslo.paseoenmin(g, 86, l);
+		
+		list.comenzar();
+		
+		while (! list.fin()) {
+			System.out.println(list.proximo());
+		}
 		
 		
 		
